@@ -1,10 +1,10 @@
 body {
-  background: linear-gradient(135deg, #0d1b3e, #243b6b);
   font-family: "Segoe UI", sans-serif;
   color: #fff;
   overflow-x: hidden;
 }
 .banner-container {
+  background: linear-gradient(135deg, #0d1b3e, #243b6b);
   .top-banner {
     background: linear-gradient(90deg, #ffb100, #ff8c00);
     color: #000;
@@ -148,106 +148,106 @@ body {
 }
 
 /* education planing section */
-.section-title {
-  font-weight: 700;
-  font-size: 42px;
-  text-align: center;
+.education-section {
+  background-color: #fff;
+  .section-title {
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+    color: #000;
+  }
+
+  .section-title span {
+    color: #ef4444;
+  }
+
+  .subtitle {
+    text-align: center;
+    color: #6b7280;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+
+  /* Cards */
+
+  .truth-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  /* Hover effect */
+  .truth-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Red curved border */
+  .truth-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    background: #ef4444;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+  }
+
+  /* Border animation on hover */
+  .truth-card:hover::before {
+    width: 10px;
+  }
+
+  /* Icon circle */
+
+  .icon-box {
+    width: 50px;
+
+    height: 50px;
+
+    background: #fde8e8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 5px;
+
+    font-size: 20px;
+
+    color: #ef4444;
+  }
+
+  /* text */
+
+  .truth-text {
+    font-size: 18px;
+
+    color: #374151;
+
+    font-weight: 500;
+  }
+
+  .warning {
+    color: #ff6a00;
+
+    font-weight: 700;
+
+    margin-right: 6px;
+  }
 }
-
-.section-title span {
-  color: #ef4444;
-}
-
-.subtitle {
-  text-align: center;
-  color: #6b7280;
-  margin-top: 10px;
-  margin-bottom: 50px;
-  font-size: 18px;
-}
-
-/* Cards */
-
-.truth-card {
-  background: #fff;
-
-  border-radius: 18px;
-
-  padding: 25px;
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 18px;
-
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-
-  position: relative;
-
-  overflow: hidden;
-}
-
-/* Red curved border */
-
-.truth-card::before {
-  content: "";
-
-  position: absolute;
-
-  left: 0;
-
-  top: 0;
-
-  bottom: 0;
-
-  width: 6px;
-
-  background: #ef4444;
-
-  border-radius: 20px;
-}
-
-/* Icon circle */
-
-.icon-box {
-  width: 60px;
-
-  height: 60px;
-
-  background: #fde8e8;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  border-radius: 18px;
-
-  font-size: 22px;
-
-  color: #ef4444;
-}
-
-/* text */
-
-.truth-text {
-  font-size: 18px;
-
-  color: #374151;
-
-  font-weight: 500;
-}
-
-.warning {
-  color: #ff6a00;
-
-  font-weight: 700;
-
-  margin-right: 6px;
-}
-
 /* responsive */
 
 @media (max-width: 768px) {
@@ -261,5 +261,117 @@ body {
 
   .truth-text {
     font-size: 16px;
+  }
+}
+
+/* facts section css */
+
+.section {
+  padding: 80px 0;
+  text-align: center;
+
+  h2 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #1f2937;
+  }
+
+  h2 span {
+    color: #f97316;
+  }
+
+  .subtitle {
+    color: #6b7280;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    font-size: 18px;
+  }
+
+  /* cards */
+
+  .edu-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+  }
+
+  .edu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  /* icon */
+
+  .icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
+
+  /* title */
+
+  .edu-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #1f2937;
+  }
+
+  /* price boxes */
+
+  .price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .today {
+    background: #d1fae5;
+  }
+
+  .future {
+    background: #fee2e2;
+  }
+
+  .price-green {
+    color: #16a34a;
+    font-weight: 600;
+  }
+
+  .price-red {
+    color: #ef4444;
+    font-weight: 600;
+  }
+
+  /* arrow icon */
+
+  .arrow {
+    width: 45px;
+    height: 45px;
+    background: #f3e8ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    color: #f97316;
+    font-size: 18px;
+  }
+
+  /* responsive */
+
+  @media (max-width: 768px) {
+    .section h2 {
+      font-size: 30px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+    }
   }
 }
