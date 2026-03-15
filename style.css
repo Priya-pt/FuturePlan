@@ -1,0 +1,265 @@
+body {
+  background: linear-gradient(135deg, #0d1b3e, #243b6b);
+  font-family: "Segoe UI", sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+.banner-container {
+  .top-banner {
+    background: linear-gradient(90deg, #ffb100, #ff8c00);
+    color: #000;
+    padding: 12px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .tagline {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  .main-heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .highlight-yellow {
+    color: #ffc107;
+  }
+
+  .highlight-orange {
+    color: #ff7a00;
+  }
+
+  .sub-text {
+    font-size: 18px;
+    opacity: 0.9;
+  }
+
+  .btn-primary-custom {
+    background: linear-gradient(90deg, #ff7a00, #ff4500);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+
+  .btn-outline-custom {
+    border: 2px solid #ffc107;
+    color: #ffc107;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    background: transparent;
+  }
+
+  .btn-outline-custom:hover {
+    background: #ffc107;
+    color: #000;
+  }
+
+  .info-box {
+    position: absolute;
+    background: #fff;
+    color: #000;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    animation: 3s ease-in-out 0s infinite normal none running float;
+  }
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  .info-box:nth-child(2) {
+    animation-delay: 1s;
+  }
+
+  .info-box small {
+    display: block;
+    font-weight: 500;
+    color: #666;
+  }
+
+  .info-box span {
+    font-size: 20px;
+  }
+
+  .stats {
+    margin-top: 30px;
+    font-size: 16px;
+    opacity: 0.9;
+  }
+
+  .wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+/* whatsapp button */
+.whatsapp-btn {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: #25d366;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-size: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 992px) {
+  .main-heading {
+    font-size: 32px;
+  }
+  .info-box {
+    position: relative;
+    margin-top: 15px;
+  }
+}
+
+/* education planing section */
+.section-title {
+  font-weight: 700;
+  font-size: 42px;
+  text-align: center;
+}
+
+.section-title span {
+  color: #ef4444;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+/* Cards */
+
+.truth-card {
+  background: #fff;
+
+  border-radius: 18px;
+
+  padding: 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+/* Red curved border */
+
+.truth-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  bottom: 0;
+
+  width: 6px;
+
+  background: #ef4444;
+
+  border-radius: 20px;
+}
+
+/* Icon circle */
+
+.icon-box {
+  width: 60px;
+
+  height: 60px;
+
+  background: #fde8e8;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 18px;
+
+  font-size: 22px;
+
+  color: #ef4444;
+}
+
+/* text */
+
+.truth-text {
+  font-size: 18px;
+
+  color: #374151;
+
+  font-weight: 500;
+}
+
+.warning {
+  color: #ff6a00;
+
+  font-weight: 700;
+
+  margin-right: 6px;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 30px;
+  }
+
+  .truth-card {
+    padding: 20px;
+  }
+
+  .truth-text {
+    font-size: 16px;
+  }
+}
